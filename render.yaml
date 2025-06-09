@@ -3,7 +3,7 @@ services:
     name: clasificador-imagenes
     runtime: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python app.py"
+    startCommand: "python3 app3.py"
     envVars:
       - key: PYTHON_VERSION
-        value: 3.10
+        value: 3.11
