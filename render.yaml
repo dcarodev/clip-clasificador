@@ -1,9 +1,10 @@
 services:
   - type: web
-    name: clasificador-imagenes
-    runtime: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python3 app3.py"
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.11
+    name: clip-clasificador
+    env: python
+    plan: free
+    region: oregon
+    buildCommand: pip3 install -r requirements.txt
+    startCommand: python3 app3.py
+    envVars: []
+    autoDeploy: true
