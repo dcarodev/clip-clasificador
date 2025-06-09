@@ -4,4 +4,4 @@ services:
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python app3.py
-    plan: free
+    envVars: []
