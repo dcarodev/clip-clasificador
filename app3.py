@@ -40,7 +40,7 @@ def check():
 
     try:
         # Seleccionamos un subconjunto aleatorio para comparar (por ejemplo max 20)
-        max_palabras = 50
+        max_palabras = 20
         indices = random.sample(range(len(palabras_es)), min(len(palabras_es), max_palabras))
         palabras_es_sel = [palabras_es[i] for i in indices]
         palabras_en_sel = [palabras_en[i] for i in indices]
